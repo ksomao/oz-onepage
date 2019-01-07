@@ -46,9 +46,9 @@ class Navbar extends React.Component {
 
   scroll(ev, section, offset = 0, isMobile) {
     ev.preventDefault()
-    var page = $(`.${section}`)
+    var sectionTop = document.getElementsByClassName(section)[0].offsetTop
     var speed = 750
-    $('html, body').animate({scrollTop: $(page).offset().top + offset}, speed)
+    $('html, body').animate({scrollTop: sectionTop + offset}, speed)
     if (isMobile) {
       this.child.current.toggleMobileMenu()
     }
