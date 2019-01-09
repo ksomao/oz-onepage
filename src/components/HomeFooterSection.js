@@ -20,16 +20,16 @@ class HomeFooterSection extends React.Component {
     const getInTouchLink = getText(this.context.lang, "home", "footerSection.getInTouch.link.title")
     const copyright = getText(this.context.lang, "home", "footerSection.copyright")
     return (
-      <Container>
+      <Container className={"footerSection"}>
         <div
           className="container footer-container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <Logo inverted={true}/>
               <div className="social">
                 <div>
                   <a className={"socialLinks"}
-                     href="">LindkedIn</a>
+                     href="">LindedIn</a>
                 </div>
                 <div>
                   <a className={"socialLinks"}
@@ -37,7 +37,7 @@ class HomeFooterSection extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-4">
               <div
                 className="col-12 footer-findUs mb-4">
                 <h2>{findUsTitle}</h2>
@@ -54,10 +54,11 @@ class HomeFooterSection extends React.Component {
               </div>
             </div>
 
-            <div className="col-lg-3">
+            <div className="col-lg-4">
               <div
                 className="col-12 footer-contact">
-                <h2>{getInTouchTitle}</h2>
+                <h2
+                  dangerouslySetInnerHTML={createMarkup(getInTouchTitle)}/>
                 <p
                   className={"p-0 m-0"}
                   dangerouslySetInnerHTML={createMarkup(getInTouchText)}/>

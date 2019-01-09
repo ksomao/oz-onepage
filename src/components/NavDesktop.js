@@ -23,6 +23,7 @@ class NavDesktop extends React.Component {
         color: 'white',
         fontWeight: 100,
       })
+      $('.nav-desktop').css({background: 'none'})
       $('.nav-desktop ul li select').css({color: 'white'})
 
       $window.scroll(() => {
@@ -32,6 +33,7 @@ class NavDesktop extends React.Component {
             fontWeight: 500,
           })
           $('.nav-desktop ul li select').css({color: 'black'})
+          $('.nav-desktop').css({background: 'white'})
           $this.setState({inverted: true});
         }
         else {
@@ -39,6 +41,7 @@ class NavDesktop extends React.Component {
             color: 'white',
             fontWeight: 100,
           })
+          $('.nav-desktop').css({background: 'none'})
           $('.nav-desktop ul li select').css({color: 'white'})
 
           $this.setState({inverted: false});

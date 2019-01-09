@@ -13,8 +13,6 @@ class Navbar extends React.Component {
 
   constructor(props) {
     super(props);
-
-
     this.toggle = this.toggle.bind(this);
     this.child = React.createRef();
     this.state = {

@@ -14,11 +14,11 @@ class HomeExpertiseSection extends React.Component {
     let leftTitle = getText(this.context.lang, "home", "expertiseSection.leftContent.title")
     let rightTitle = getText(this.context.lang, "home", "expertiseSection.rightContent.title")
     return (
-      <Container className={""}>
-        <div className="container expertiseSection">
+      <Container className={"expertiseSection"}>
+        <div className="container ">
+          <h2
+            className={'expertise-title col-12 col-md-7'}>{title}</h2>
           <div className="row expertise-row">
-            <h2
-              className={'expertise-title col-12 col-md-6'}>{title}</h2>
             <div
               className="expertise-content expertise-content-left col-12 col-sm-10 col-md-6">
               <h3
@@ -57,14 +57,12 @@ export default HomeExpertiseSection
 const Container = styled.div`
 padding-top: 100px;
 .expertise-content{
-  padding-top: 100px;
+  padding-top:48px;
 }
-.expertise-row{
-  .expertise-title{
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 32px;
-  }
+
+.expertise-title{
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 .expertise-content-left{
   background:#FCB74B;
@@ -119,7 +117,7 @@ padding-top: 100px;
     z-index: 5;
     max-width: 600px;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 800;
   }
 }
 .expertise-content-left{

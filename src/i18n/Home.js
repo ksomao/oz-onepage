@@ -286,7 +286,7 @@ export default {
         fr: ''
       },
       text: {
-        en: 'Cantersteen 10 <br> 1000 Brussels <br> Belgium',
+        en: 'Avenue Franklin Roosevelt, 48<br> 1050 Bruxelles<br> Belgium',
         nl: '',
         fr: ''
       }
@@ -305,7 +305,7 @@ export default {
     },
     getInTouch: {
       title: {
-        en: 'Do you have a question? A project? ',
+        en: 'Do you have a question? <br>A project? ',
         nl: '',
         fr: ''
       },
