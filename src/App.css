@@ -6,7 +6,7 @@
   font-weight: 100;
   src: local('Futura PT Light'),
   local('Futura-PT-Light'),
-  url(/public/fonts/FuturaPTLight.otf) format('opentype');
+  url(/public/fonts/FuturaLight.ttf) format('truetype');
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-weight: 400;
   src: local('Futura PT Book'),
   local('Futura-PT-Book'),
-  url(/public/fonts/FuturaPTBook.otf) format('opentype');
+  url(/public/fonts/FuturaBook.ttf) format('truetype');
 }
 
 @font-face {
@@ -24,7 +24,7 @@
   font-weight: 500;
   src: local('Futura PT Medium'),
   local('Futura-PT-Medium'),
-  url(/public/fonts/FuturaPTMedium.otf) format('opentype');
+  url(/public/fonts/FuturaMedium.ttf) format('truetype');
 }
 
 @font-face {
@@ -33,7 +33,7 @@
   font-weight: 600;
   src: local('Futura PT Demi'),
   local('Futura-PT-Demi'),
-  url(/public/fonts/FuturaPTDemi.otf) format('opentype');
+  url(/public/fonts/FuturaDemi.ttf) format('truetype');
 }
 
 @font-face {
@@ -42,7 +42,7 @@
   font-weight: 700;
   src: local('Futura PT Bold'),
   local('Futura-PT-Bold'),
-  url(/public/fonts/FuturaPTBold.otf) format('opentype');
+  url(/public/fonts/FuturaBold.ttf) format('truetype');
 }
 
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import $ from 'jquery';
 import styled from 'styled-components'
-import LanguageSelector from "./LanguageSelector";
 import Logo from "./Logo";
 
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import {LanguageContext} from "../Context/LanguageProvider";
-import LanguageSelector from "./LanguageSelector";
 import Logo from "./Logo";
 import $ from "jquery";
 

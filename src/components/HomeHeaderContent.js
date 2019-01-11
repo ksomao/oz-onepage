@@ -11,13 +11,6 @@ const bg = process.env.PUBLIC_URL + '/assets/img/bg.png';
 export default class HomeHeaderContent extends React.Component {
   static contextType = LanguageContext;
 
-  /*  scroll(ev, section, offset = 0) {
-      ev.preventDefault()
-      var page = $(`.${section}`)
-      var speed = 750
-      $('html, body').animate({scrollTop: $(page).offset().top + offset}, speed)
-    }*/
-
   render() {
     return (
       <Container className="header-container">
@@ -26,7 +19,7 @@ export default class HomeHeaderContent extends React.Component {
           <div className="row">
             <div className="offset-md-1 col-md-7">
               <h1> {getText(this.context.lang, "home", "headerSection.title")}</h1>
-              <p> {getText(this.context.lang, "home", "headerSection.linkContact")}</p>
+              <a href={"https://jimmygoossens.typeform.com/to/GgjwAL"}> {getText(this.context.lang, "home", "headerSection.linkContact.text")}</a>
             </div>
           </div>
         </div>
@@ -59,17 +52,23 @@ h1{
   margin-bottom: 64px;
   color: white;
 }
-p{
+a{
   color: #FCC231;  
   font-size: 30px;
   line-height: normal;
   text-decoration: underline;
   font-weight: 600 ;
+  display: block;
   max-width: 164px;
   transition: all 0.2s ease;
-  &:hover{
+ &:hover{
     cursor: pointer;
     color:#faaf00;
+  }
+  &:visited{
+    cursor: pointer;
+    color:#faaf00;
+    text-decoration: underline;
   }
 }
 @media (min-width: 576px){
@@ -96,10 +95,11 @@ h1{
   margin-bottom: 64px;
   color: white;
 }
-p{
+a{
   color: #FCC231;  
   font-size: 30px;
   line-height: normal;
+  display: block;
   text-decoration: underline;
   font-weight: 600 ;
   max-width: 164px;
@@ -107,6 +107,11 @@ p{
   &:hover{
     cursor: pointer;
     color:#faaf00;
+  }
+  &:visited{
+    cursor: pointer;
+    color:#faaf00;
+    text-decoration: underline;
   }
 }
 }

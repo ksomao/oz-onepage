@@ -1,7 +1,7 @@
 import React from 'react'
 
 const logo = process.env.PUBLIC_URL + '/assets/img/Logo.svg';
-const logoDark = process.env.PUBLIC_URL + '/assets/img/LogoDark.svg';
+const logoDark = process.env.PUBLIC_URL + '/assets/img/logoDark.svg';
 
 class Logo extends React.Component {
   render() {

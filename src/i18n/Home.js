@@ -33,9 +33,16 @@ export default {
       nl: ''
     },
     linkContact: {
-      en: 'Wanna talk about you project ?',
-      fr: '',
-      nl: ''
+      url: {
+        en: 'https://jimmygoossens.typeform.com/to/GgjwAL',
+        fr: '',
+        nl: ''
+      },
+      text: {
+        en: 'Wanna talk about your project ?',
+        fr: '',
+        nl: ''
+      }
     },
   },
   agencySection: {
@@ -270,12 +277,12 @@ export default {
   },
   footerSection: {
     linkedIn: {
-      en: '',
+      en: 'https://www.linkedin.com/company/ozstudio/about',
       fr: '',
       nl: ''
     },
     facebook: {
-      en: '',
+      en: 'https://www.facebook.com/OZstudio-2299445250065849',
       fr: '',
       nl: ''
     },
@@ -298,9 +305,9 @@ export default {
         fr: ''
       },
       text: {
-        en: 'contact@ozstudio.be <br>',
-        nl: '',
-        fr: ''
+        en: 'valerian@ozstudio.be <br>',
+        nl: 'valerian@ozstudio.be <br>',
+        fr: 'valerian@ozstudio.be <br>'
       }
     },
     getInTouch: {
@@ -321,7 +328,7 @@ export default {
           fr: ''
         },
         url: {
-          en: '',
+          en: 'https://jimmygoossens.typeform.com/to/GgjwAL',
           nl: '',
           fr: ''
         }
@@ -332,6 +339,5 @@ export default {
       nl: '',
       fr: ''
     },
-
   }
 }

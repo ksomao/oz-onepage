@@ -11,7 +11,6 @@ class HomeTeamSection extends React.Component {
     let title = getText(this.context.lang, "home", "teamSection.title")
     let text = getText(this.context.lang, "home", "teamSection.text")
     let team = getText(this.context.lang, "home", "teamSection.list")
-    console.log(team);
 
     return (
       <Container className={"teamSection"}>

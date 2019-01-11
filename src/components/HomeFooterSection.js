@@ -5,8 +5,6 @@ import getText from "../i18n";
 import Logo from "./Logo";
 import {createMarkup} from "../Utils";
 
-const LogoPath = process.env.PUBLIC_URL + '/assets/img/logo.svg';
-
 class HomeFooterSection extends React.Component {
   static contextType = LanguageContext;
 
@@ -18,7 +16,10 @@ class HomeFooterSection extends React.Component {
     const getInTouchTitle = getText(this.context.lang, "home", "footerSection.getInTouch.title")
     const getInTouchText = getText(this.context.lang, "home", "footerSection.getInTouch.text")
     const getInTouchLink = getText(this.context.lang, "home", "footerSection.getInTouch.link.title")
+    const getInTouchUrl = getText(this.context.lang, "home", "footerSection.getInTouch.link.url")
     const copyright = getText(this.context.lang, "home", "footerSection.copyright")
+    const linkedin = getText(this.context.lang, "home", "footerSection.linkedIn")
+    const facebook = getText(this.context.lang, "home", "footerSection.facebook")
     return (
       <Container className={"footerSection"}>
         <div
@@ -29,11 +30,11 @@ class HomeFooterSection extends React.Component {
               <div className="social">
                 <div>
                   <a className={"socialLinks"}
-                     href="">LindedIn</a>
+                     href={linkedin}>LinkedIn</a>
                 </div>
                 <div>
                   <a className={"socialLinks"}
-                     href="">Facebook</a>
+                     href={facebook}>Facebook</a>
                 </div>
               </div>
             </div>
@@ -48,8 +49,9 @@ class HomeFooterSection extends React.Component {
                 className="col-12 footer-contact mb-4">
                 <h2>{contactTitle}</h2>
                 <a
-                  href={""}
-                  className={"links"}
+                  onClick={(e) => e.preventDefault()}
+                  href={"https://ozstudio.be"}
+                  className={"links contact-link"}
                   dangerouslySetInnerHTML={createMarkup(contactText)}/>
               </div>
             </div>
@@ -63,7 +65,7 @@ class HomeFooterSection extends React.Component {
                   className={"p-0 m-0"}
                   dangerouslySetInnerHTML={createMarkup(getInTouchText)}/>
                 <a className={'getInTouchLink'}
-                   href="">{getInTouchLink}</a>
+                   href={getInTouchUrl}>{getInTouchLink}</a>
               </div>
             </div>
           </div>
@@ -82,6 +84,16 @@ margin-top: 64px;
 background:#EDEDED;
 padding-top: 40px; 
 padding-bottom: 16px;
+.contact-link{
+font-weight: 400;
+  color:rgba(0,0,0,0.7);
+  &:visited{
+    color: black;
+  }
+  &:hover{
+    color: #F5C231;
+  }
+}
 .footer-container{
   position: relative;
 }
@@ -107,11 +119,13 @@ p{
 .socialLinks{
   font-size: 24px;
   font-weight: 600;
-  color:'black';
-  margin-left: 15px;
- 
+  color:black;
+  margin-left: 15px; 
   &:visited{
     color: black;
+  }
+  &:hover{
+    color: #F5C231;
   }
 }
 .social{

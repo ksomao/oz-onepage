@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import {LanguageContext} from "../Context/LanguageProvider";
-import {Link} from "react-router-dom";
 import getText from "../i18n";
 import {createMarkup} from "../Utils";
 
