@@ -14,6 +14,11 @@ import LanguageProvider
 import HomeScreen from "./screens/HomeScreen";
 import './App.css';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-112476423-2');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
+
 const theme = {};
 
 class App extends Component {
