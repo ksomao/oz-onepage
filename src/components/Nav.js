@@ -69,19 +69,19 @@ class Navbar extends React.Component {
             </li>
             <li className="nav-item">
               <span
-                onClick={(ev) => this.scroll(ev, 'projectsStorage', 0, true)}
+                onClick={(ev) => this.scroll(ev, 'projectsSection', 0, true)}
               >{getText(this.context.lang, "home", "nav.projects")}</span>
             </li>
             <li
               className="nav-item">
               <span
-                onClick={(ev) => this.scroll(ev, 'teamSection', 0, true)}
+                onClick={(ev) => this.scroll(ev, 'teamSection', -70, true)}
               >{getText(this.context.lang, "home", "nav.team")}</span>
             </li>
             <li
               className="nav-item contact-button">
               <span
-                onClick={(ev) => this.scroll(ev, 'footerSection', 0, true)}>
+                onClick={(ev) => this.scroll(ev, 'footerSection', -100, true)}>
                 {getText(this.context.lang, "home", "nav.contact")}
               </span>
             </li>

@@ -35,10 +35,12 @@ class NavMobile extends React.Component {
       $window.scroll(() => {
         if ($window.scrollTop() >= distance - 210) {
           $('.nav-mobile ul li select').css({color: 'black'})
+          $('.nav-mobile-container').css({background: 'white'})
           $this.setState({inverted: true});
         }
         else {
           $('.nav-mobile ul li select').css({color: 'White'})
+          $('.nav-mobile-container').css({background: 'none'})
           $this.setState({inverted: false});
         }
       });
@@ -88,7 +90,6 @@ class NavMobile extends React.Component {
 }
 
 export default NavMobile
-
 const Nav = styled.nav`
 .nav-mobile-container{
   width: 100%;
